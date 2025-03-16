@@ -1,4 +1,4 @@
-# 📊 Stack Visualizer 
+# [Stack Visualizer](https://stack-dsa-visualizer.netlify.app/) 
 
 A web-based interactive tool to visualize and understand the operations of a stack data structure. This project allows users to perform stack operations like push, pop, peek, and more, with real-time visualization and keyboard shortcuts.
 
