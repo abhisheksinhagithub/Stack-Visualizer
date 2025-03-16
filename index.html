@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualizer</title>
+    <link rel="shortcut icon" href="Image/stack.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/Navbar & Footer.css">
+    <link rel="stylesheet" href="CSS/Main Content.css">
+    <link rel="stylesheet" href="CSS/Hovering & Dark Mode.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="heading">Stack Visualizer</div>
+        <div class="toggle-container">
+            <img src="Image/moon.svg" alt="" class="moon-icon" id="theme-toggle">
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-container">
+
+            <div class="left">
+                <div class="top">
+                    <div class="input-group">
+                        <input type="number" class="text" required placeholder="Enter stack size">
+                        <button class="stack-size">Stack Size</button>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="text" required placeholder="Enter value">
+                        <button class="push">Push</button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="bucket stack-item"></div>
+
+
+                    <div class="keyboard-shortcuts">
+                        <h3>Keyboard Shortcuts</h3>
+                        <ul>
+                            <li><strong>H</strong>: Stack Size</li>
+                            <li><strong>P</strong>: Push</li>
+                            <li><strong>O</strong>: Pop</li>
+                            <li><strong>D</strong>: Clear All (Reset)</li>
+                            <li><strong>U</strong>: Undo</li>
+                            <li><strong>R</strong>: Redo</li>
+                            <li><strong>S</strong>: Randomize (RNG)</li>
+                            <li><strong>E</strong>: Is Empty</li>
+                            <li><strong>K</strong>: Peek</li>
+                            <li><strong>L</strong>: Display</li>
+                            <li><strong>X</strong>: Toggle Shortcuts</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="btns-group">
+                        <button class="pop">Pop</button>
+                        <button class="peek">Peek</button>
+                        <button class="display">Display</button>
+                        <button class="is-empty">Is Empty</button>
+                        <button class="randomize">RNG</button> <!--RNG means Random Number Generator-->
+                        <button class="undo">Undo</button>
+                        <button class="redo">Redo</button>
+                        <button class="reset">Reset</button>
+                        <button class="keyboard-shortcut"><i class="fa-solid fa-keyboard"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="vertical-bar"></div>
+
+            <div class="right">
+                <div class="sec1">
+                    <span>Top of the Stack</span>
+                    <i class="fa-solid fa-arrow-right fa-sm"></i>
+                    <button class="output-btn top-stack"></button>
+                </div>
+                <div class="sec1">
+                    <span>Last Pushed Item</span>
+                    <i class="fa-solid fa-arrow-right fa-sm"></i>
+                    <button class="output-btn pushed-item"></button>
+                </div>
+                <div class="sec1">
+                    <span>Last Popped Item</span>
+                    <i class="fa-solid fa-arrow-right fa-sm"></i>
+                    <button class="output-btn popped-item"></button>
+                </div>
+                <div class="sec1">
+                    <span>Size of the Stack</span>
+                    <i class="fa-solid fa-arrow-right fa-sm"></i>
+                    <button class="output-btn max-size"></button>
+                </div>
+                <div class="sec1">
+                    <span>Current Stack Size</span>
+                    <i class="fa-solid fa-arrow-right fa-sm"></i>
+                    <button class="output-btn current-size"></button>
+                </div>
+                <div class="message-box">
+                    <span>Message Box</span>
+                    <div class="message"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>This project is made by <strong>Abhishek Kumar Sinha</strong></p>
+        <p><i class="fa-regular fa-copyright"></i> 2025 Stack Visualizer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
